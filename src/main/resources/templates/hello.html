@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<head>
+    <title>Hello World!</title>
+</head>
+<script type="text/javascript">
+
+    function a123() {
+        $.ajax({
+            url: "http://localhost:8083/sysUser/test?jsoncallback=?",
+            method: "POST",
+            dataType: "text",
+            success: function (data) {
+                debugger;
+            },
+            error: function (d) {
+                debugger;
+            }
+
+
+        })
+    }
+
+
+</script>
+<body>
+<input type="submit" value="Sign Out" onclick="a123();"/>
+
+
+</body>
+</html> 
