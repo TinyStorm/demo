@@ -9,7 +9,7 @@ import org.springframework.web.socket.messaging.SubProtocolWebSocketHandler;
 @ComponentScan
 public class Application {
     public static void main(String[] args) throws Exception {
-        //返回spring上下文
+        //返回spring上下文,可用于获取bean
         SpringApplication.run(Application.class, args);
 
     }
